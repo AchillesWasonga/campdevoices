@@ -1,0 +1,86 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <h2>Feedback</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <hr>
+
+    <!-- FAQ Section -->
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <section class="faq">
+        <div class="faq-item">
+            <h4>1. What is Camp de Voices?</h4>
+            <p>Camp de Voices is a platform for fostering conversations, growth, and community among individuals with similar interests.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>2. How do I register for an account?</h4>
+            <p>You can register by visiting our registration page and filling out the form with your details. You will need a valid email address to sign up.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>3. How do I submit feedback?</h4>
+            <p>Fill out the feedback form above, providing your name, email, and message. Once submitted, our team will get back to you as soon as possible.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>4. How do I join a program?</h4>
+            <p>You can find details about our programs on the "Programs" page. Each program will have instructions on how to join.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>5. How can I contact the team directly?</h4>
+            <p>You can reach out to us via email or use the "Contact Us" form available on our website.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Contact Us Section -->
+    <h2>Contact Us</h2>
+    <section id="contact-us">
+        <div class="contact-item">
+            <h4>Email Us</h4>
+            <p>
+                For general inquiries, you can email us at: 
+                <a href="mailto:info@campdevoices.com">info@campdevoices.com</a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h4>Visit Our Office</h4>
+            <p>
+                You can visit our office for more information. Our address is:
+                <a href="https://goo.gl/maps/fakeoffice123" target="_blank">123 Voice Street, Nairobi, Kenya</a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h4>Follow Us on Social Media</h4>
+            <p>
+                Connect with us on social media:
+                <a href="https://twitter.com/campdevoices" target="_blank">Twitter</a> |
+                <a href="https://www.facebook.com/campdevoices" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/campdevoices" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </section>
+
+{% endblock %}
+
+<script src="{% static 'app/js/main.js' %}"></script>

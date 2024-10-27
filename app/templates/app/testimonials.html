@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <h2>Testimonials</h2>
+    <section id="testimonials-section">
+        <div class="testimonial active">
+            <p>"Camp de Voices is the best experience I've had. The community is amazing!"</p>
+            <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I learned so much from the workshops. Highly recommended!"</p>
+            <h4>- John Smith</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The leadership exchange was life-changing! I feel empowered to lead."</p>
+            <h4>- Alex Johnson</h4>
+        </div>
+    </section>
+
+    <script src="{% static 'app/js/main.js' %}"></script>
+{% endblock %}
+

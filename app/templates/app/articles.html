@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <h2>Articles</h2>
+    <p>Explore our collection of articles on various topics.</p>
+
+    <!-- Segment 1: Technology and Society -->
+    <section id="tech-society">
+        <h3>Technology and Society</h3>
+        <ul>
+            <li><a href="https://www.wired.com/story/tech-and-society-impact/" target="_blank">The Impact of Technology on Society - Wired</a></li>
+            <li><a href="https://www.theverge.com/2023/9/12/technology-future-society" target="_blank">How Future Tech is Shaping Society - The Verge</a></li>
+        </ul>
+    </section>
+
+    <!-- Segment 2: Leadership and Innovation -->
+    <section id="leadership-innovation">
+        <h3>Leadership and Innovation</h3>
+        <ul>
+            <li><a href="https://hbr.org/2022/11/leadership-and-innovation" target="_blank">Fostering Innovation in Leadership - Harvard Business Review</a></li>
+            <li><a href="https://www.forbes.com/sites/leadership/2024/03/05/innovative-leadership/" target="_blank">Innovative Leadership Techniques - Forbes</a></li>
+        </ul>
+    </section>
+
+    <!-- Segment 3: Climate and Environment -->
+    <section id="climate-environment">
+        <h3>Climate and Environment</h3>
+        <ul>
+            <li><a href="https://www.nationalgeographic.com/environment" target="_blank">Understanding Climate Change - National Geographic</a></li>
+            <li><a href="https://www.bbc.com/news/science-environment" target="_blank">Environmental News and Updates - BBC</a></li>
+        </ul>
+    </section>
+
+    <script src="{% static 'app/js/main.js' %}"></script>
+
+{% endblock %}

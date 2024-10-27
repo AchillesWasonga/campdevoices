@@ -1,0 +1,446 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #4CAF50; /* Green */
+    color: #ffffff; /* White */
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Red */
+}
+
+/* Navbar background when scrolled */
+nav.scrolled {
+    background-color: #000000; /* Black */
+    transition: background-color 0.3s;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #ff0000, #4CAF50); /* Red to Green Gradient */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-section button {
+    background-color: #000000; /* Black */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
+    background-color: #ffffff; /* White */
+    color: #ff0000; /* Red */
+}
+
+/* Video Section Styling */
+.featured-videos {
+    padding: 20px;
+    background-color: #ffffff; /* White */
+}
+
+.videos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.cta button {
+    background-color: #ff0000; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #000000; /* Black */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000; /* Black */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* FAQ Styling */
+.faq {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    margin-top: 20px;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken navbar on scroll */
+    transition: background-color 0.3s;
+}
+
+/* Style for Testimonials Section */
+#testimonials-section {
+    margin: 40px auto;
+    max-width: 800px; /* Limit the width for better readability */
+    text-align: center;
+    background-color: #fff; /* White background to highlight the testimonials */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for better focus */
+}
+
+/* Style for Each Testimonial */
+.testimonial {
+    display: none; /* Hide all testimonials initially */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.testimonial.active {
+    display: block; /* Show the current active testimonial */
+    opacity: 1; /* Make the active testimonial fully visible */
+}
+
+/* Testimonial Text Styling */
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic; /* Italicize the testimonial text */
+    color: #333; /* Dark grey for readability */
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Author Styling */
+.testimonial h4 {
+    font-size: 1rem;
+    color: #E53935; /* Red color to match the website's theme */
+    font-weight: bold;
+}
+
+/* Header Styling for Testimonials Section */
+h2 {
+    color: #000; /* Black header color to match the theme */
+    text-transform: uppercase;
+    margin: 20px 0;
+    border-bottom: 2px solid #E53935; /* Red underline for emphasis */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Responsive Design for Testimonials Section */
+@media (max-width: 768px) {
+    #testimonials-section {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .testimonial p {
+        font-size: 1rem; /* Reduce font size for readability on smaller screens */
+    }
+}
+
+
+
+/* Style for the Programs Section */
+#tuko-freshy-dhuleni,
+#tuko-freshy-mtaani,
+#changamkia-climate,
+#leadership-exchange-experience,
+#training-trainers {
+    border: 2px solid #4CAF50;  /* Green border to represent growth and nature */
+    border-radius: 8px;  /* Rounded corners for a modern look */
+    margin: 20px 0;  /* Spacing between program sections */
+    padding: 20px;  /* Padding inside each section */
+    background-color: #f9f9f9;  /* Light background to make content readable */
+    transition: transform 0.3s, background-color 0.3s;  /* Animation for hover effects */
+}
+
+/* Header Styling for Program Sections */
+#tuko-freshy-dhuleni h3,
+#tuko-freshy-mtaani h3,
+#changamkia-climate h3,
+#leadership-exchange-experience h3,
+#training-trainers h3 {
+    color: #E53935;  /* Red color for the headers to stand out */
+    font-weight: bold;  /* Make headers bold */
+    text-transform: uppercase;  /* Make text all uppercase for emphasis */
+    margin-bottom: 10px;  /* Space below the headers */
+}
+
+/* General Text Styling */
+#tuko-freshy-dhuleni p,
+#tuko-freshy-mtaani p,
+#changamkia-climate p,
+#leadership-exchange-experience p,
+#training-trainers p {
+    color: #333;  /* Dark grey for readability */
+    line-height: 1.6;  /* Increase line height for better text readability */
+    font-size: 1rem;  /* Default font size */
+}
+
+/* Hover Effect for Program Sections */
+#tuko-freshy-dhuleni:hover,
+#tuko-freshy-mtaani:hover,
+#changamkia-climate:hover,
+#leadership-exchange-experience:hover,
+#training-trainers:hover {
+    transform: scale(1.05);  /* Scale up slightly on hover */
+    background-color: #fff;  /* Change background to pure white on hover */
+}
+
+/* Style for "Our Programs" Header */
+h2 {
+    color: #000;  /* Black header color to match your theme */
+    text-align: center;  /* Center the title */
+    text-transform: uppercase;  /* Make the title all uppercase */
+    margin: 20px 0;  /* Space above and below the header */
+    border-bottom: 2px solid #E53935;  /* Red border below header */
+    display: inline-block;  /* Make header visually distinct with inline display */
+    padding-bottom: 10px;  /* Space below the header text */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #tuko-freshy-dhuleni,
+    #tuko-freshy-mtaani,
+    #changamkia-climate,
+    #leadership-exchange-experience,
+    #training-trainers {
+        padding: 15px;  /* Reduce padding for smaller screens */
+        margin: 15px 0;  /* Reduce margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem;  /* Reduce size for smaller screens */
+    }
+}
+
+
+/* Style for Articles Section */
+#tech-society,
+#leadership-innovation,
+#climate-environment {
+    border: 2px solid #E53935; /* Red border for emphasis */
+    border-radius: 8px; /* Rounded corners for modern look */
+    margin: 20px 0; /* Spacing between segments */
+    padding: 20px; /* Padding inside each segment */
+    background-color: #f9f9f9; /* Light background for readability */
+    transition: transform 0.3s, background-color 0.3s; /* Animation for hover effects */
+}
+
+/* Header Styling for Each Segment */
+#tech-society h3,
+#leadership-innovation h3,
+#climate-environment h3 {
+    color: #4CAF50; /* Green color for headers */
+    font-weight: bold; /* Make headers bold */
+    text-transform: uppercase; /* Make text all uppercase for emphasis */
+    margin-bottom: 10px; /* Space below the headers */
+}
+
+/* Article Links Styling */
+#tech-society ul,
+#leadership-innovation ul,
+#climate-environment ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+#tech-society ul li,
+#leadership-innovation ul li,
+#climate-environment ul li {
+    margin-bottom: 10px; /* Space between links */
+}
+
+#tech-society ul li a,
+#leadership-innovation ul li a,
+#climate-environment ul li a {
+    color: #000; /* Black link color for better readability */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+#tech-society ul li a:hover,
+#leadership-innovation ul li a:hover,
+#climate-environment ul li a:hover {
+    color: #E53935; /* Red color on hover */
+}
+
+/* Hover Effect for Segments */
+#tech-society:hover,
+#leadership-innovation:hover,
+#climate-environment:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    background-color: #fff; /* Change background to pure white on hover */
+}
+
+/* Header Styling for Articles Section */
+h2 {
+    color: #000; /* Black header color to match the theme */
+    text-transform: uppercase;
+    margin: 20px 0;
+    border-bottom: 2px solid #4CAF50; /* Green underline for emphasis */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Responsive Design for Articles Section */
+@media (max-width: 768px) {
+    #tech-society,
+    #leadership-innovation,
+    #climate-environment {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 15px 0; /* Reduce margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce size for smaller screens */
+    }
+}
+
+
+/* Style for Feedback Form */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #E53935; /* Red button to match theme */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #C62828; /* Darker red on hover */
+}
+
+/* Style for FAQ Section */
+.faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h4 {
+    cursor: pointer;
+    color: #4CAF50; /* Green color for emphasis */
+    font-weight: bold;
+}
+
+.faq-item p {
+    display: none; /* Initially hidden */
+    margin-top: 5px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Style for Contact Us Section */
+#contact-us {
+    margin-top: 20px;
+}
+
+.contact-item {
+    border: 2px solid #E53935; /* Red border for emphasis */
+    border-radius: 8px; /* Rounded corners for aesthetic appeal */
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, background-color 0.3s; /* Animation for hover effects */
+}
+
+.contact-item h4 {
+    color: #4CAF50; /* Green color for contact titles */
+    font-weight: bold;
+}
+
+.contact-item a {
+    color: #E53935; /* Red color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #C62828; /* Darker red on hover */
+}
+
+/* Responsive Design for Feedback, FAQ, and Contact Sections */
+@media (max-width: 768px) {
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%; /* Ensure fields take full width on small screens */
+    }
+
+    .contact-item {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce size for smaller screens */
+    }
+}

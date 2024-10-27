@@ -1,0 +1,52 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="hero-section">
+    <h2>Welcome to Campde Voices</h2>
+    <p>We are the home of great conversations. Explore our content and get involved!</p>
+    <button onclick="scrollToSection('featured-section')">Discover More</button>
+</div>
+
+<!-- <section id="featured-section" class="featured-videos">
+    <h3>Our Featured Videos</h3>
+    <div class="videos-container">
+        <!-- Video 1 --
+        <div class="video-item">
+            <video width="320" height="180" controls>
+                <source src="{% static 'app/media/featured1.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Video 2 --
+        <div class="video-item">
+            <video width="320" height="180" controls>
+                <source src="{% static 'app/media/featured2.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+        <!-- Video 3 --
+        <div class="video-item">
+            <video width="320" height="180" controls>
+                <source src="{% static 'app/media/ChangamkiaClimate.zip' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section> -->
+
+<section id="about-section" class="about-us">
+    <h3>About Us</h3>
+    <p>Campde Voices is a platform for fostering conversations, growth, and community. Join us today!</p>
+</section>
+
+<section id="cta-section" class="cta">
+    <h3>Want to Join Our Programs?</h3>
+    <button onclick="scrollToSection('programs')">View Programs</button>
+</section>
+<script src="{% static 'app/js/main.js' %}"></script>
+
+{% endblock %}
