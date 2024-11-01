@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8#pi70g_*@a+^q^okw3ssh01d=c-=ka)adwkg-!fdh6nv_=)pl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['campdevoices.com', 'campdevoices.org', 'www.campdevoices.com', 'www.campdevoices.org']
+ALLOWED_HOSTS = ['campdevoices.org', 'campdevoices.com', 'www.campdevoices.org', 'www.campdevoices.com',]
 
 
 # Application definition
@@ -120,10 +120,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'app/static'),
+    os.path.join(BASE_DIR, 'app/static/app'),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'app/static/app')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'app/static/app/media')
 
 
 # Default primary key field type
